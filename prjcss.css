@@ -1,0 +1,30 @@
+body{
+    background-color: gray;
+    color: white;
+}
+h1{
+    color: lavender;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    text-align: center;
+}
+#firstHead{
+    color:lightblue;
+    font-size: 30px;
+    text-align: justify;
+    padding-left: 100px;
+}
+table{
+    color: mediumturquoise;
+    padding-left: 100px;
+}
+th{
+    color:blueviolet;
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+}
+td{
+    font-size: 30px;
+}

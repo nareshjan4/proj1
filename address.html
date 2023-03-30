@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Address Information</title>
+        <link rel="stylesheet" type="text/css" href="prjcss.css">
+    </header>
+    <body>
+        <h1>
+            Address Information
+        </h1>
+        <br> <br>
+        <form name="addrForm" action = "confirmation.html" method="post" onsubmit="return validateAddrForm()">
+            <table border="0" cellpadding = "5">
+                <tr>
+                    <td>Address Line1</td>
+                    <td> <input type = "text" name="addLine1" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Address Line2</td>
+                    <td> <input type = "text" name="addLine2" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Address Line3</td>
+                    <td> <input type = "text" name="addLine3" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td> <input type = "text" name="State" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td> <input type = "text" name="Country" size="30"> </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input type="radio" id = "metro" name = "metro" value="metro"> 
+                        <label for="metro">Metro</label>
+                    </td>
+                    <td>
+                        <input type="radio" id = "nonmetro" name = "metro" value="nonmetro"> 
+                        <label for="nonmetro">Non-Metro</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type = "submit" value = "submit" name = "submit" style="height: 30px; width: 150px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script type="text/javascript" src="validatejs.js"> </script>
+    </body>
+</html>

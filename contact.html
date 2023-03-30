@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Contact Information</title>
+        <link rel="stylesheet" type="text/css" href="prjcss.css">
+    </header>
+    <body>
+        <h1>
+            Contact Information
+        </h1>
+        <br> <br>
+        <form name="contForm" action = "confirmation.html" method="post" onsubmit="validateContForm()">
+            <table border="0" cellpadding = "5">
+                <tr>
+                    <td>Telephone Number</td>
+                    <td> <input type = "text" name="telephone" size="30" pattern="[0-9]"> </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td> <input type = "text" name="mobile" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Work Number</td>
+                    <td> <input type = "text" name="work" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Email Id</td>
+                    <td> <input type = "text" name="email" size="30"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type = "submit" value = "submit" name = "submit" style="height: 30px; width: 150px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Account Information</title>
+        <link rel="stylesheet" type="text/css" href="prjcss.css">
+    </header>
+    <body>
+        <h1>
+            Account Information
+        </h1>
+        <br> <br>
+        <form action = "confirmation.html" method="post">
+            <table border="0" cellpadding = "5">
+                <tr>
+                    <td>Credit card</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>Card Number</td>
+                    <td> <input type = "text" name="cardnum" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Expiry Month</td>
+                    <td> 
+                        <select name = "expMonth">
+                            <!-- <option value = "Select" selected hidden> Select</option>
+                            <option value = "1"> 1</option>
+                            <option value = "2"> 2</option>
+                            <option value = "3"> 3</option>
+                            <option value = "4"> 4</option>
+                            <option value = "5"> 5</option>
+                            <option value = "6"> 6</option>
+                            <option value = "7"> 7</option>
+                            <option value = "8"> 8</option>
+                            <option value = "9"> 9</option>
+                            <option value ="10">10</option>
+                            <option value ="11">11</option>
+                            <option value ="12">12</option> -->
+                            <option *ngFor="let value of HardcodedValue" >
+                                {{ value  }} </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expiry year</td>
+                    <td> 
+                        <select name = "expYear">
+                            <option value = "Select" selected hidden> Select</option>
+                            <option value = "2023"> 2023</option>
+                            <option value = "2024"> 2023</option>
+                            <option value = "2025"> 2024</option>
+                            <option value = "2026"> 2026</option>
+                            <option value = "2027"> 2027</option>
+                            <option value = "2028"> 2028</option>
+                            <option value = "2029"> 2029</option>
+                            <option value = "2030"> 2030</option>
+                            <option value = "2031"> 2031</option>
+                            <option value = "2032"> 2032</option>
+                            <option value = "2033"> 2033</option>
+                            <option value = "2034"> 2034</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type = "submit" value = "submit" name = "submit" style="height: 30px; width: 150px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script type="text/javascript" src="validatejs.js"> </script>
+    </body>
+</html>
